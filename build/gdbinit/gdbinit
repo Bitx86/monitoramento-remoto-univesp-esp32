@@ -1,0 +1,2 @@
+source /home/vinicius/Projetos/sistema-vacinas-esp32/build/gdbinit/symbols
+source /home/vinicius/Projetos/sistema-vacinas-esp32/build/gdbinit/connect
