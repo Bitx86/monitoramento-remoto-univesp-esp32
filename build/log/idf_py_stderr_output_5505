@@ -1,0 +1,6 @@
+Command: ninja all
+CMake Error at CMakeLists.txt:5:
+  Parse error.  Expected "(", got identifier with text "esp_wifi".
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

@@ -1074,6 +1074,13 @@
 /home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/ulp/CMakeFiles/install.dir
 /home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/ulp/CMakeFiles/install/local.dir
 /home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/ulp/CMakeFiles/install/strip.dir
+/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/espressif__mqtt/CMakeFiles/__idf_espressif__mqtt.dir
+/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/espressif__mqtt/CMakeFiles/edit_cache.dir
+/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/espressif__mqtt/CMakeFiles/rebuild_cache.dir
+/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/espressif__mqtt/CMakeFiles/list_install_components.dir
+/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/espressif__mqtt/CMakeFiles/install.dir
+/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/espressif__mqtt/CMakeFiles/install/local.dir
+/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/espressif__mqtt/CMakeFiles/install/strip.dir
 /home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/main/CMakeFiles/__idf_main.dir
 /home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/main/CMakeFiles/edit_cache.dir
 /home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/main/CMakeFiles/rebuild_cache.dir

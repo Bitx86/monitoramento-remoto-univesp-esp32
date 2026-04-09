@@ -155,6 +155,7 @@
 		"/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/rt/cmake_install.cmake",
 		"/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/spiffs/cmake_install.cmake",
 		"/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/ulp/cmake_install.cmake",
+		"/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/espressif__mqtt/cmake_install.cmake",
 		"/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/main/cmake_install.cmake"
 	],
 	"Parallel" : false
