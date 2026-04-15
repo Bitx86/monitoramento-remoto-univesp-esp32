@@ -6,6 +6,7 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   "bootloader/bootloader.bin"
   "bootloader/bootloader.elf"
   "bootloader/bootloader.map"
+  "cert.pem.S"
   "config/sdkconfig.cmake"
   "config/sdkconfig.h"
   "esp-idf/mbedtls/x509_crt_bundle"
