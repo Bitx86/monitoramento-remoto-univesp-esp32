@@ -1,51 +1,44 @@
-#include "temp.h"
-#include "esp_log.h"
-#include "esp_adc/adc_oneshot.h"
+#include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "esp_log.h"
+#include "driver/temperature_sensor.h"
 
-static const char *TAG = "TEMP";
+static const char *TAG = "temp_interna";
 
-QueueHandle_t fila_temperatura = NULL;
-
-static adc_oneshot_unit_handle_t adc_handle;
-
-void temp_init(void)
+void app_main(void)
 {
-    fila_temperatura = xQueueCreate(5, sizeof(float));
-    if (fila_temperatura == NULL) {
-        ESP_LOGE(TAG, "Falha ao criar fila de temperatura");
-    }
+    // Passo 1: Definir o handle e configurar o intervalo de medição.
+    // A faixa escolhida (20~85°C) cobre temperaturas típicas de operação
+    // do chip em ambiente controlado e sob carga.
+    temperature_sensor_handle_t temp_handle = NULL;
+    temperature_sensor_config_t temp_config = TEMPERATURE _SENSOR_CONFIG_DEFAULT(20, 85);
 
-    adc_oneshot_unit_init_cfg_t init_cfg = {
-        .unit_id = ADC_UNIT_1,
-    };
-    ESP_ERROR_CHECK(adc_oneshot_new_unit(&init_cfg, &adc_handle));
+    // Passo 2: Instalar o driver do sensor de temperatura.
+    ESP_ERROR_CHECK(temperature_sensor_install(&temp_config, &temp_handle));
+    ESP_LOGI(TAG, "Sensor de temperatura interno instalado.");
 
-    adc_oneshot_chan_cfg_t chan_cfg = {
-        .atten    = ADC_ATTEN_DB_12,
-        .bitwidth = ADC_BITWIDTH_DEFAULT,
-    };
-    ESP_ERROR_CHECK(adc_oneshot_config_channel(adc_handle, ADC_CHANNEL_6, &chan_cfg));
-}
+    // Passo 3: Habilitar o sensor — o circuito interno passa a operar.
+    ESP_ERROR_CHECK(temperature_sensor_enable(temp_handle));
+    ESP_LOGI(TAG, "Sensor de temperatura habilitado. Iniciando leituras...");
 
-void temp_task(void *pvParameters)
-{
-    int raw = 0;
-    float mv, temperatura;
+    float temperatura_celsius = 0.0f;
 
     while (1) {
-        ESP_ERROR_CHECK(adc_oneshot_read(adc_handle, ADC_CHANNEL_6, &raw));
+        // Passo 4: Realizar a leitura em graus Celsius.
+        esp_err_t resultado = temperature_sensor_get_celsius(temp_handle, &temperatura_celsius);
 
-        mv          = (raw * 3300.0f) / 4095.0f;
-        temperatura = mv / 10.0f;
-
-        ESP_LOGI(TAG, "Raw: %d | %.1f mV | %.2f°C", raw, mv, temperatura);
-
-        if (xQueueSend(fila_temperatura, &temperatura, 0) != pdTRUE) {
-            ESP_LOGW(TAG, "Fila cheia, leitura descartada");
+        if (resultado == ESP_OK) {
+            ESP_LOGI(TAG, "Temperatura interna do chip: %.2f °C", temperatura_celsius);
+        } else {
+            ESP_LOGE(TAG, "Falha na leitura do sensor (código: %s)", esp_err_to_name(resultado));
         }
 
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        // Aguarda 2 segundos entre leituras.
+        vTaskDelay(pdMS_TO_TICKS(2000));
     }
+
+    // Código de limpeza — em aplicações reais com ciclo de vida definido:
+    // ESP_ERROR_CHECK(temperature_sensor_disable(temp_handle));
+    // ESP_ERROR_CHECK(temperature_sensor_uninstall(temp_handle));
 }

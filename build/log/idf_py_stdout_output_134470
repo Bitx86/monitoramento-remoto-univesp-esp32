@@ -1,0 +1,552 @@
+Command: /home/vinicius/.espressif/python_env/idf6.0_py3.14_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/vinicius/Projetos/sistema-vacinas-esp32/build/sistema-vacinas-esp32.elf /home/vinicius/Projetos/sistema-vacinas-esp32/build/bootloader/bootloader.elf -m '/home/vinicius/.espressif/python_env/idf6.0_py3.14_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 26 2026 19:12:31[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1fd10h (130320) map[0m
+[0;32mI (133) esp_image: segment 1: paddr=0002fd38 vaddr=3ffb0000 size=002e0h (   736) load[0m
+[0;32mI (133) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=9fb40h (654144) map[0m
+[0;32mI (370) esp_image: segment 3: paddr=000cfb68 vaddr=3ffb02e0 size=04268h ( 17000) load[0m
+[0;32mI (377) esp_image: segment 4: paddr=000d3dd8 vaddr=40080000 size=15820h ( 88096) load[0m
+[0;32mI (413) esp_image: segment 5: paddr=000e9600 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (445) app_init: Application information:[0m
+[0;32mI (449) app_init: Project name:     sistema-vacinas-esp32[0m
+[0;32mI (454) app_init: App version:      e3446dd-dirty[0m
+[0;32mI (458) app_init: Compile time:     Apr 26 2026 19:12:28[0m
+[0;32mI (463) app_init: ELF file SHA256:  11f38f39b...[0m
+[0;32mI (467) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (476) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (480) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (484) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (490) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (495) heap_init: At 3FFB8EF8 len 00027108 (156 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (506) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 40095820 len 0000A7E0 (41 KiB): IRAM[0m
+[0;32mI (518) spi_flash: detected chip: winbond[0m
+[0;32mI (520) spi_flash: flash io: dio[0m
+[0;33mW (523) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (537) main_task: Started on CPU0[0m
+[0;32mI (547) main_task: Calling app_main()[0m
+[0;32mI (597) wifi:wifi driver task: 3ffc0a44, prio:23, stack:6656, core=0[0m
+[0;32mI (607) wifi:wifi firmware version: 44738b4[0m
+[0;32mI (617) wifi:wifi certification version: v7.0[0m
+[0;32mI (617) wifi:config NVS flash: enabled[0m
+[0;32mI (617) wifi:config nano formatting: disabled[0m
+[0;32mI (617) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (617) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (627) wifi:Init management short buffer num: 32[0m
+[0;32mI (627) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (637) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (637) wifi:Init static rx buffer num: 10[0m
+[0;32mI (637) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (647) wifi_init: rx ba win: 6[0m
+[0;32mI (647) wifi_init: accept mbox: 6[0m
+[0;32mI (647) wifi_init: tcpip mbox: 32[0m
+[0;32mI (657) wifi_init: udp mbox: 6[0m
+[0;32mI (657) wifi_init: tcp mbox: 6[0m
+[0;32mI (657) wifi_init: tcp tx win: 5760[0m
+[0;32mI (667) wifi_init: tcp rx win: 5760[0m
+[0;32mI (667) wifi_init: tcp mss: 1440[0m
+[0;32mI (667) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (677) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (677) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (767) wifi:mode : sta (24:0a:c4:30:ef:58)[0m
+[0;32mI (767) wifi:enable tsf[0m
+[0;32mI (767) wifi station: wifi_init_sta finished.[0m
+[0;32mI (777) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (777) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (817) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (827) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (937) wifi:connected with Bebel, aid = 14, channel 1, BW20, bssid = 84:0b:bb:82:4d:70[0m
+[0;32mI (937) wifi:security: WPA2-PSK, phy: bgn, rssi: -68[0m
+[0;32mI (937) wifi:pm start, type: 1[0m
+
+[0;32mI (947) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1017) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1427) wifi:<ba-add>idx:0 (ifx:0, 84:0b:bb:82:4d:70), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2007) wifi:<ba-add>idx:1 (ifx:0, 84:0b:bb:82:4d:70), tid:7, ssn:7, winSize:64[0m
+[0;32mI (2507) esp_netif_handlers: sta ip: 192.168.15.25, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (2507) wifi station: got ip:192.168.15.25[0m
+[0;32mI (2507) wifi station: connected to ap SSID:Bebel[0m
+[0;32mI (2507) TEMP: Calibração ADC ativada[0m
+[0;32mI (2527) main_task: Returned from app_main()[0m
+[0;32mI (2617) TEMP: Raw: 2020 | 1811 mV | 25.04 °C[0m
+[0;32mI (3717) TEMP: Raw: 2033 | 1822 mV | 24.60 °C[0m
+[0;32mI (4817) TEMP: Raw: 2051 | 1836 mV | 24.03 °C[0m
+[0;32mI (4817) MQTT: Conectado ao broker[0m
+[0;32mI (4817) MQTT: Mensagem enviada: {"temperatura": 25.04, "status": "ok"}[0m
+[0;32mI (5327) MQTT: Mensagem enviada: {"temperatura": 24.60, "status": "ok"}[0m
+[0;32mI (5827) MQTT: Mensagem enviada: {"temperatura": 24.03, "status": "ok"}[0m
+[0;32mI (5917) TEMP: Raw: 2002 | 1796 mV | 25.65 °C[0m
+[0;32mI (6327) MQTT: Mensagem enviada: {"temperatura": 25.65, "status": "ok"}[0m
+[0;32mI (7017) TEMP: Raw: 2050 | 1836 mV | 24.03 °C[0m
+[0;32mI (7017) MQTT: Mensagem enviada: {"temperatura": 24.03, "status": "ok"}[0m
+[0;32mI (8117) TEMP: Raw: 2059 | 1843 mV | 23.75 °C[0m
+[0;32mI (8117) MQTT: Mensagem enviada: {"temperatura": 23.75, "status": "ok"}[0m
+[0;32mI (9217) TEMP: Raw: 2053 | 1838 mV | 23.95 °C[0m
+[0;32mI (9217) MQTT: Mensagem enviada: {"temperatura": 23.95, "status": "ok"}[0m
+[0;32mI (10317) TEMP: Raw: 2053 | 1838 mV | 23.95 °C[0m
+[0;32mI (10317) MQTT: Mensagem enviada: {"temperatura": 23.95, "status": "ok"}[0m
+[0;32mI (11417) TEMP: Raw: 2057 | 1841 mV | 23.83 °C[0m
+[0;32mI (11417) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (12517) TEMP: Raw: 2052 | 1837 mV | 23.99 °C[0m
+[0;32mI (12517) MQTT: Mensagem enviada: {"temperatura": 23.99, "status": "ok"}[0m
+[0;32mI (13617) TEMP: Raw: 2057 | 1841 mV | 23.83 °C[0m
+[0;32mI (13617) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (14717) TEMP: Raw: 2052 | 1837 mV | 23.99 °C[0m
+[0;32mI (14717) MQTT: Mensagem enviada: {"temperatura": 23.99, "status": "ok"}[0m
+[0;32mI (15817) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (15817) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (16917) TEMP: Raw: 2057 | 1841 mV | 23.83 °C[0m
+[0;32mI (16917) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (18017) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (18017) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (19117) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (19117) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (20217) TEMP: Raw: 2051 | 1836 mV | 24.03 °C[0m
+[0;32mI (20217) MQTT: Mensagem enviada: {"temperatura": 24.03, "status": "ok"}[0m
+[0;32mI (21317) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (21317) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (22417) TEMP: Raw: 2050 | 1836 mV | 24.03 °C[0m
+[0;32mI (22417) MQTT: Mensagem enviada: {"temperatura": 24.03, "status": "ok"}[0m
+[0;32mI (23517) TEMP: Raw: 2052 | 1837 mV | 23.99 °C[0m
+[0;32mI (23517) MQTT: Mensagem enviada: {"temperatura": 23.99, "status": "ok"}[0m
+[0;32mI (24617) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (24617) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (25717) TEMP: Raw: 2049 | 1835 mV | 24.07 °C[0m
+[0;32mI (25717) MQTT: Mensagem enviada: {"temperatura": 24.07, "status": "ok"}[0m
+[0;32mI (26817) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (26817) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (27917) TEMP: Raw: 2050 | 1836 mV | 24.03 °C[0m
+[0;32mI (27917) MQTT: Mensagem enviada: {"temperatura": 24.03, "status": "ok"}[0m
+[0;32mI (29017) TEMP: Raw: 2052 | 1837 mV | 23.99 °C[0m
+[0;32mI (29017) MQTT: Mensagem enviada: {"temperatura": 23.99, "status": "ok"}[0m
+[0;32mI (30117) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (30117) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (31217) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (31217) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (32317) TEMP: Raw: 2057 | 1841 mV | 23.83 °C[0m
+[0;32mI (32317) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (33417) TEMP: Raw: 2039 | 1827 mV | 24.40 °C[0m
+[0;32mI (33417) MQTT: Mensagem enviada: {"temperatura": 24.40, "status": "ok"}[0m
+[0;32mI (34517) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (34517) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (35617) TEMP: Raw: 2050 | 1836 mV | 24.03 °C[0m
+[0;32mI (35617) MQTT: Mensagem enviada: {"temperatura": 24.03, "status": "ok"}[0m
+[0;32mI (36717) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (36717) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (37817) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (37817) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (38917) TEMP: Raw: 2051 | 1836 mV | 24.03 °C[0m
+[0;32mI (38917) MQTT: Mensagem enviada: {"temperatura": 24.03, "status": "ok"}[0m
+[0;32mI (40017) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (40017) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (41117) TEMP: Raw: 2053 | 1838 mV | 23.95 °C[0m
+[0;32mI (41117) MQTT: Mensagem enviada: {"temperatura": 23.95, "status": "ok"}[0m
+[0;32mI (42217) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (42217) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (43317) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (43317) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (44417) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (44417) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (45517) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (45517) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (46617) TEMP: Raw: 2049 | 1835 mV | 24.07 °C[0m
+[0;32mI (46617) MQTT: Mensagem enviada: {"temperatura": 24.07, "status": "ok"}[0m
+[0;32mI (47717) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (47717) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (48817) TEMP: Raw: 2051 | 1836 mV | 24.03 °C[0m
+[0;32mI (48817) MQTT: Mensagem enviada: {"temperatura": 24.03, "status": "ok"}[0m
+[0;32mI (49917) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (49917) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (51017) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (51017) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (52117) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (52117) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (53217) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (53217) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (54317) TEMP: Raw: 2053 | 1838 mV | 23.95 °C[0m
+[0;32mI (54317) MQTT: Mensagem enviada: {"temperatura": 23.95, "status": "ok"}[0m
+[0;32mI (55417) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (55417) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (56517) TEMP: Raw: 2051 | 1836 mV | 24.03 °C[0m
+[0;32mI (56517) MQTT: Mensagem enviada: {"temperatura": 24.03, "status": "ok"}[0m
+[0;32mI (57617) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (57617) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (58717) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (58717) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (59817) TEMP: Raw: 2041 | 1828 mV | 24.35 °C[0m
+[0;32mI (59817) MQTT: Mensagem enviada: {"temperatura": 24.35, "status": "ok"}[0m
+       v1.0
+[0;32mI (485) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (491) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (496) heap_init: At 3FFB8EF8 len 00027108 (156 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 40095820 len 0000A7E0 (41 KiB): IRAM[0m
+[0;32mI (519) spi_flash: detected chip: winbond[0m
+[0;32mI (521) spi_flash: flash io: dio[0m
+[0;33mW (524) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (538) main_task: Started on CPU0[0m
+[0;32mI (548) main_task: Calling app_main()[0m
+[0;32mI (598) wifi:wifi driver task: 3ffc0a44, prio:23, stack:6656, core=0[0m
+[0;32mI (608) wifi:wifi firmware version: 44738b4[0m
+[0;32mI (618) wifi:wifi certification version: v7.0[0m
+[0;32mI (618) wifi:config NVS flash: enabled[0m
+[0;32mI (618) wifi:config nano formatting: disabled[0m
+[0;32mI (618) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (618) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (628) wifi:Init management short buffer num: 32[0m
+[0;32mI (628) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (638) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (638) wifi:Init static rx buffer num: 10[0m
+[0;32mI (638) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (648) wifi_init: rx ba win: 6[0m
+[0;32mI (648) wifi_init: accept mbox: 6[0m
+[0;32mI (648) wifi_init: tcpip mbox: 32[0m
+[0;32mI (658) wifi_init: udp mbox: 6[0m
+[0;32mI (658) wifi_init: tcp mbox: 6[0m
+[0;32mI (658) wifi_init: tcp tx win: 5760[0m
+[0;32mI (668) wifi_init: tcp rx win: 5760[0m
+[0;32mI (668) wifi_init: tcp mss: 1440[0m
+[0;32mI (668) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (678) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (678) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (758) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (778) wifi:mode : sta (24:0a:c4:30:ef:58)[0m
+[0;32mI (778) wifi:enable tsf[0m
+[0;32mI (778) wifi station: wifi_init_sta finished.[0m
+[0;32mI (798) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (798) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (828) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (838) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (948) wifi:connected with Bebel, aid = 14, channel 1, BW20, bssid = 84:0b:bb:82:4d:70[0m
+[0;32mI (948) wifi:security: WPA2-PSK, phy: bgn, rssi: -72[0m
+[0;32mI (958) wifi:pm start, type: 1[0m
+
+[0;32mI (958) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1018) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1328) wifi:<ba-add>idx:0 (ifx:0, 84:0b:bb:82:4d:70), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2468) esp_netif_handlers: sta ip: 192.168.15.25, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (2468) wifi station: got ip:192.168.15.25[0m
+[0;32mI (2468) wifi station: connected to ap SSID:Bebel[0m
+[0;32mI (2468) TEMP: Calibração ADC ativada[0m
+[0;32mI (2488) main_task: Returned from app_main()[0m
+[0;32mI (2498) wifi:<ba-add>idx:1 (ifx:0, 84:0b:bb:82:4d:70), tid:7, ssn:8, winSize:64[0m
+[0;32mI (2578) TEMP: Raw: 2021 | 1812 mV | 25.00 °C[0m
+[0;32mI (3858) TEMP: Raw: 2033 | 1822 mV | 24.60 °C[0m
+[0;32mI (4578) MQTT: Conectado ao broker[0m
+[0;32mI (4588) MQTT: Mensagem enviada: {"temperatura": 25.00, "status": "ok"}[0m
+[0;32mI (4958) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (5088) MQTT: Mensagem enviada: {"temperatura": 24.60, "status": "ok"}[0m
+[0;32mI (5588) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (6058) TEMP: Raw: 2025 | 1815 mV | 24.88 °C[0m
+[0;32mI (6088) MQTT: Mensagem enviada: {"temperatura": 24.88, "status": "ok"}[0m
+[0;32mI (7158) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (7158) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (8258) TEMP: Raw: 2058 | 1842 mV | 23.79 °C[0m
+[0;32mI (8258) MQTT: Mensagem enviada: {"temperatura": 23.79, "status": "ok"}[0m
+[0;32mI (9358) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (9358) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (10458) TEMP: Raw: 2058 | 1842 mV | 23.79 °C[0m
+[0;32mI (10458) MQTT: Mensagem enviada: {"temperatura": 23.79, "status": "ok"}[0m
+[0;32mI (11558) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (11558) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (12658) TEMP: Raw: 2057 | 1841 mV | 23.83 °C[0m
+[0;32mI (12658) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (13758) TEMP: Raw: 2057 | 1841 mV | 23.83 °C[0m
+[0;32mI (13758) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (14858) TEMP: Raw: 2052 | 1837 mV | 23.99 °C[0m
+[0;32mI (14858) MQTT: Mensagem enviada: {"temperatura": 23.99, "status": "ok"}[0m
+[0;32mI (15958) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (15958) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (17058) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (17058) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (18158) TEMP: Raw: 2058 | 1842 mV | 23.79 °C[0m
+[0;32mI (18158) MQTT: Mensagem enviada: {"temperatura": 23.79, "status": "ok"}[0m
+[0;32mI (19258) TEMP: Raw: 2058 | 1842 mV | 23.79 °C[0m
+[0;32mI (19258) MQTT: Mensagem enviada: {"temperatura": 23.79, "status": "ok"}[0m
+[0;32mI (20358) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (20358) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (21458) TEMP: Raw: 2057 | 1841 mV | 23.83 °C[0m
+[0;32mI (21458) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (22558) TEMP: Raw: 2051 | 1836 mV | 24.03 °C[0m
+[0;32mI (22558) MQTT: Mensagem enviada: {"temperatura": 24.03, "status": "ok"}[0m
+[0;32mI (23658) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (23658) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (24758) TEMP: Raw: 2057 | 1841 mV | 23.83 °C[0m
+[0;32mI (24758) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (25858) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (25858) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (26958) TEMP: Raw: 2061 | 1845 mV | 23.67 °C[0m
+[0;32mI (26958) MQTT: Mensagem enviada: {"temperatura": 23.67, "status": "ok"}[0m
+[0;32mI (28058) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (28058) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (29158) TEMP: Raw: 2051 | 1836 mV | 24.03 °C[0m
+[0;32mI (29158) MQTT: Mensagem enviada: {"temperatura": 24.03, "status": "ok"}[0m
+[0;32mI (30258) TEMP: Raw: 2044 | 1831 mV | 24.23 °C[0m
+[0;32mI (30258) MQTT: Mensagem enviada: {"temperatura": 24.23, "status": "ok"}[0m
+[0;32mI (31358) TEMP: Raw: 2047 | 1833 mV | 24.15 °C[0m
+[0;32mI (31358) MQTT: Mensagem enviada: {"temperatura": 24.15, "status": "ok"}[0m
+[0;32mI (32458) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (32458) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (33558) TEMP: Raw: 2052 | 1837 mV | 23.99 °C[0m
+[0;32mI (33558) MQTT: Mensagem enviada: {"temperatura": 23.99, "status": "ok"}[0m
+[0;32mI (34658) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (34658) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (35758) TEMP: Raw: 2045 | 1831 mV | 24.23 °C[0m
+[0;32mI (35758) MQTT: Mensagem enviada: {"temperatura": 24.23, "status": "ok"}[0m
+[0;32mI (36858) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (36858) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (37958) TEMP: Raw: 2058 | 1842 mV | 23.79 °C[0m
+[0;32mI (37958) MQTT: Mensagem enviada: {"temperatura": 23.79, "status": "ok"}[0m
+[0;32mI (39058) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (39058) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (40158) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (40158) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (41258) TEMP: Raw: 2054 | 1839 mV | 23.91 °C[0m
+[0;32mI (41258) MQTT: Mensagem enviada: {"temperatura": 23.91, "status": "ok"}[0m
+[0;32mI (42358) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (42358) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (43458) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (43458) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (44558) TEMP: Raw: 2056 | 1841 mV | 23.83 °C[0m
+[0;32mI (44558) MQTT: Mensagem enviada: {"temperatura": 23.83, "status": "ok"}[0m
+[0;32mI (45658) TEMP: Raw: 2055 | 1840 mV | 23.87 °C[0m
+[0;32mI (45658) MQTT: Mensagem enviada: {"temperatura": 23.87, "status": "ok"}[0m
+[0;32mI (46758) TEMP: Raw: 2044 | 1831 mV | 24.23 °C[0m
+[0;32mI (46758) MQTT: Mensagem enviada: {"temperatura": 24.23, "status": "ok"}[0m
+[0;32mI (47858) TEMP: Raw: 3204 | 2727 mV | -11.90 °C[0m
+[0;32mI (47858) MQTT: Mensagem enviada: {"temperatura": -11.90, "status": "ok"}[0m
+[0;32mI (48958) TEMP: Raw: 0 | 142 mV | 92.34 °C[0m
+[0;32mI (48958) MQTT: Mensagem enviada: {"temperatura": 92.34, "status": "ok"}[0m
+[0;32mI (50058) TEMP: Raw: 0 | 142 mV | 92.34 °C[0m
+[0;32mI (50058) MQTT: Mensagem enviada: {"temperatura": 92.34, "status": "ok"}[0m
+[0;32mI (51158) TEMP: Raw: 9 | 149 mV | 92.06 °C[0m
+[0;32mI (51158) MQTT: Mensagem enviada: {"temperatura": 92.06, "status": "ok"}[0m
+[0;32mI (52258) TEMP: Raw: 127 | 247 mV | 88.10 °C[0m
+[0;32mI (52258) MQTT: Mensagem enviada: {"temperatura": 88.10, "status": "ok"}[0m
+[0;32mI (53358) TEMP: Raw: 62 | 193 mV | 90.28 °C[0m
+[0;32mI (53358) MQTT: Mensagem enviada: {"temperatura": 90.28, "status": "ok"}[0m
+[0;32mI (54458) TEMP: Raw: 28 | 165 mV | 91.41 °C[0m
+[0;32mI (54458) MQTT: Mensagem enviada: {"temperatura": 91.41, "status": "ok"}[0m
+[0;32mI (55558) TEMP: Raw: 19 | 158 mV | 91.69 °C[0m
+[0;32mI (55558) MQTT: Mensagem enviada: {"temperatura": 91.69, "status": "ok"}[0m
+[0;32mI (56658) TEMP: Raw: 189 | 298 mV | 86.05 °C[0m
+[0;32mI (56658) MQTT: Mensagem enviada: {"temperatura": 86.05, "status": "ok"}[0m
+[0;32mI (57758) TEMP: Raw: 1711 | 1556 mV | 35.32 °C[0m
+[0;32mI (57758) MQTT: Mensagem enviada: {"temperatura": 35.32, "status": "ok"}[0m
+[0;32mI (58858) TEMP: Raw: 1399 | 1298 mV | 45.73 °C[0m
+[0;32mI (58858) MQTT: Mensagem enviada: {"temperatura": 45.73, "status": "ok"}[0m
+[0;32mI (59958) TEMP: Raw: 1689 | 1537 mV | 36.09 °C[0m
+[0;32mI (59958) MQTT: Mensagem enviada: {"temperatura": 36.09, "status": "ok"}[0m
+[0;32mI (61058) TEMP: Raw: 1934 | 1740 mV | 27.90 °C[0m
+[0;32mI (61058) MQTT: Mensagem enviada: {"temperatura": 27.90, "status": "ok"}[0m
+[0;32mI (62158) TEMP: Raw: 1879 | 1694 mV | 29.76 °C[0m
+[0;32mI (62158) MQTT: Mensagem enviada: {"temperatura": 29.76, "status": "ok"}[0m
+[0;32mI (63258) TEMP: Raw: 2341 | 2076 mV | 14.35 °C[0m
+[0;32mI (63258) MQTT: Mensagem enviada: {"temperatura": 14.35, "status": "ok"}[0m
+[0;32mI (64358) TEMP: Raw: 1310 | 1224 mV | 48.71 °C[0m
+[0;32mI (64358) MQTT: Mensagem enviada: {"temperatura": 48.71, "status": "ok"}[0m
+[0;32mI (65458) TEMP: Raw: 219 | 323 mV | 85.04 °C[0m
+[0;32mI (65458) MQTT: Mensagem enviada: {"temperatura": 85.04, "status": "ok"}[0m
+[0;32mI (66558) TEMP: Raw: 232 | 334 mV | 84.60 °C[0m
+[0;32mI (66558) MQTT: Mensagem enviada: {"temperatura": 84.60, "status": "ok"}[0m
+[0;32mI (67658) TEMP: Raw: 198 | 306 mV | 85.73 °C[0m
+[0;32mI (67658) MQTT: Mensagem enviada: {"temperatura": 85.73, "status": "ok"}[0m
+[0;32mI (68758) TEMP: Raw: 426 | 494 mV | 78.15 °C[0m
+[0;32mI (68758) MQTT: Mensagem enviada: {"temperatura": 78.15, "status": "ok"}[0m
+[0;32mI (69858) TEMP: Raw: 1601 | 1465 mV | 38.99 °C[0m
+[0;32mI (69858) MQTT: Mensagem enviada: {"temperatura": 38.99, "status": "ok"}[0m
+[0;32mI (70958) TEMP: Raw: 1618 | 1479 mV | 38.43 °C[0m
+[0;32mI (70958) MQTT: Mensagem enviada: {"temperatura": 38.43, "status": "ok"}[0m
+[0;32mI (72058) TEMP: Raw: 2013 | 1805 mV | 25.28 °C[0m
+[0;32mI (72058) MQTT: Mensagem enviada: {"temperatura": 25.28, "status": "ok"}[0m
+[0;32mI (73158) TEMP: Raw: 215 | 320 mV | 85.16 °C[0m
+[0;32mI (73158) MQTT: Mensagem enviada: {"temperatura": 85.16, "status": "ok"}[0m
+[0;32mI (74258) TEMP: Raw: 188 | 297 mV | 86.09 °C[0m
+[0;32mI (74258) MQTT: Mensagem enviada: {"temperatura": 86.09, "status": "ok"}[0m
+[0;32mI (75358) TEMP: Raw: 229 | 331 mV | 84.72 °C[0m
+[0;32mI (75358) MQTT: Mensagem enviada: {"temperatura": 84.72, "status": "ok"}[0m
+[0;32mI (76458) TEMP: Raw: 214 | 319 mV | 85.20 °C[0m
+[0;32mI (76458) MQTT: Mensagem enviada: {"temperatura": 85.20, "status": "ok"}[0m
+[0;32mI (77558) TEMP: Raw: 203 | 310 mV | 85.56 °C[0m
+[0;32mI (77558) MQTT: Mensagem enviada: {"temperatura": 85.56, "status": "ok"}[0m
+[0;32mI (78658) TEMP: Raw: 270 | 365 mV | 83.35 °C[0m
+[0;32mI (78658) MQTT: Mensagem enviada: {"temperatura": 83.35, "status": "ok"}[0m
+[0;32mI (79758) TEMP: Raw: 296 | 387 mV | 82.46 °C[0m
+[0;32mI (79758) MQTT: Mensagem enviada: {"temperatura": 82.46, "status": "ok"}[0m
+[0;32mI (80858) TEMP: Raw: 290 | 382 mV | 82.66 °C[0m
+[0;32mI (80858) MQTT: Mensagem enviada: {"temperatura": 82.66, "status": "ok"}[0m
+[0;32mI (81958) TEMP: Raw: 289 | 381 mV | 82.70 °C[0m
+[0;32mI (81958) MQTT: Mensagem enviada: {"temperatura": 82.70, "status": "ok"}[0m
+[0;32mI (83058) TEMP: Raw: 279 | 372 mV | 83.06 °C[0m
+[0;32mI (83058) MQTT: Mensagem enviada: {"temperatura": 83.06, "status": "ok"}[0m
+[0;32mI (84158) TEMP: Raw: 278 | 372 mV | 83.06 °C[0m
+[0;32mI (84158) MQTT: Mensagem enviada: {"temperatura": 83.06, "status": "ok"}[0m
+[0;32mI (85258) TEMP: Raw: 259 | 356 mV | 83.71 °C[0m
+[0;32mI (85258) MQTT: Mensagem enviada: {"temperatura": 83.71, "status": "ok"}[0m
+[0;32mI (86358) TEMP: Raw: 274 | 368 mV | 83.23 °C[0m
+[0;32mI (86358) MQTT: Mensagem enviada: {"temperatura": 83.23, "status": "ok"}[0m
+[0;32mI (87458) TEMP: Raw: 272 | 367 mV | 83.27 °C[0m
+[0;32mI (87458) MQTT: Mensagem enviada: {"temperatura": 83.27, "status": "ok"}[0m
+[0;32mI (88558) TEMP: Raw: 266 | 362 mV | 83.47 °C[0m
+[0;32mI (88558) MQTT: Mensagem enviada: {"temperatura": 83.47, "status": "ok"}[0m
+[0;32mI (89658) TEMP: Raw: 269 | 364 mV | 83.39 °C[0m
+[0;32mI (89658) MQTT: Mensagem enviada: {"temperatura": 83.39, "status": "ok"}[0m
+[0;32mI (90758) TEMP: Raw: 276 | 370 mV | 83.15 °C[0m
+[0;32mI (90758) MQTT: Mensagem enviada: {"temperatura": 83.15, "status": "ok"}[0m
+[0;32mI (91858) TEMP: Raw: 275 | 369 mV | 83.19 °C[0m
+[0;32mI (91858) MQTT: Mensagem enviada: {"temperatura": 83.19, "status": "ok"}[0m
+[0;32mI (92958) TEMP: Raw: 275 | 369 mV | 83.19 °C[0m
+[0;32mI (92958) MQTT: Mensagem enviada: {"temperatura": 83.19, "status": "ok"}[0m
+[0;32mI (94058) TEMP: Raw: 274 | 368 mV | 83.23 °C[0m
+[0;32mI (94058) MQTT: Mensagem enviada: {"temperatura": 83.23, "status": "ok"}[0m
+[0;32mI (95158) TEMP: Raw: 275 | 369 mV | 83.19 °C[0m
+[0;32mI (95158) MQTT: Mensagem enviada: {"temperatura": 83.19, "status": "ok"}[0m
+[0;32mI (96258) TEMP: Raw: 279 | 372 mV | 83.06 °C[0m
+[0;32mI (96258) MQTT: Mensagem enviada: {"temperatura": 83.06, "status": "ok"}[0m
+[0;32mI (97358) TEMP: Raw: 278 | 372 mV | 83.06 °C[0m
+[0;32mI (97358) MQTT: Mensagem enviada: {"temperatura": 83.06, "status": "ok"}[0m
+[0;32mI (98458) TEMP: Raw: 279 | 372 mV | 83.06 °C[0m
+[0;32mI (98458) MQTT: Mensagem enviada: {"temperatura": 83.06, "status": "ok"}[0m
+[0;32mI (99558) TEMP: Raw: 280 | 373 mV | 83.02 °C[0m
+[0;32mI (99558) MQTT: Mensagem enviada: {"temperatura": 83.02, "status": "ok"}[0m
+[0;32mI (100658) TEMP: Raw: 277 | 371 mV | 83.10 °C[0m
+[0;32mI (100658) MQTT: Mensagem enviada: {"temperatura": 83.10, "status": "ok"}[0m
+[0;32mI (101758) TEMP: Raw: 274 | 368 mV | 83.23 °C[0m
+[0;32mI (101758) MQTT: Mensagem enviada: {"temperatura": 83.23, "status": "ok"}[0m
+[0;32mI (102858) TEMP: Raw: 282 | 375 mV | 82.94 °C[0m
+[0;32mI (102858) MQTT: Mensagem enviada: {"temperatura": 82.94, "status": "ok"}[0m
+[0;32mI (103958) TEMP: Raw: 271 | 366 mV | 83.31 °C[0m
+[0;32mI (103958) MQTT: Mensagem enviada: {"temperatura": 83.31, "status": "ok"}[0m
+[0;32mI (105058) TEMP: Raw: 269 | 364 mV | 83.39 °C[0m
+[0;32mI (105058) MQTT: Mensagem enviada: {"temperatura": 83.39, "status": "ok"}[0m
+[0;32mI (106158) TEMP: Raw: 267 | 363 mV | 83.43 °C[0m
+[0;32mI (106158) MQTT: Mensagem enviada: {"temperatura": 83.43, "status": "ok"}[0m
+[0;32mI (107258) TEMP: Raw: 273 | 368 mV | 83.23 °C[0m
+[0;32mI (107258) MQTT: Mensagem enviada: {"temperatura": 83.23, "status": "ok"}[0m
+[0;32mI (108358) TEMP: Raw: 273 | 368 mV | 83.23 °C[0m
+[0;32mI (108358) MQTT: Mensagem enviada: {"temperatura": 83.23, "status": "ok"}[0m
+[0;32mI (109458) TEMP: Raw: 272 | 367 mV | 83.27 °C[0m
+[0;32mI (109468) MQTT: Mensagem enviada: {"temperatura": 83.27, "status": "ok"}[0m
+[0;32mI (110558) TEMP: Raw: 269 | 364 mV | 83.39 °C[0m
+[0;32mI (110558) MQTT: Mensagem enviada: {"temperatura": 83.39, "status": "ok"}[0m
+[0;32mI (111658) TEMP: Raw: 261 | 358 mV | 83.63 °C[0m
+[0;32mI (111658) MQTT: Mensagem enviada: {"temperatura": 83.63, "status": "ok"}[0m
+[0;32mI (112758) TEMP: Raw: 258 | 355 mV | 83.75 °C[0m
+[0;32mI (112758) MQTT: Mensagem enviada: {"temperatura": 83.75, "status": "ok"}[0m
+[0;32mI (113858) TEMP: Raw: 254 | 352 mV | 83.87 °C[0m
+[0;32mI (113858) MQTT: Mensagem enviada: {"temperatura": 83.87, "status": "ok"}[0m
+[0;32mI (114958) TEMP: Raw: 178 | 289 mV | 86.41 °C[0m
+[0;32mI (114958) MQTT: Mensagem enviada: {"temperatura": 86.41, "status": "ok"}[0m
+[0;32mI (116058) TEMP: Raw: 150 | 266 mV | 87.34 °C[0m
+[0;32mI (116058) MQTT: Mensagem enviada: {"temperatura": 87.34, "status": "ok"}[0m
+[0;32mI (117158) TEMP: Raw: 150 | 266 mV | 87.34 °C[0m
+[0;32mI (117158) MQTT: Mensagem enviada: {"temperatura": 87.34, "status": "ok"}[0m
+[0;32mI (118258) TEMP: Raw: 148 | 264 mV | 87.42 °C[0m
+[0;32mI (118258) MQTT: Mensagem enviada: {"temperatura": 87.42, "status": "ok"}[0m
+[0;32mI (119358) TEMP: Raw: 165 | 278 mV | 86.85 °C[0m
+[0;32mI (119358) MQTT: Mensagem enviada: {"temperatura": 86.85, "status": "ok"}[0m
+[0;32mI (120458) TEMP: Raw: 175 | 287 mV | 86.49 °C[0m
+[0;32mI (120458) MQTT: Mensagem enviada: {"temperatura": 86.49, "status": "ok"}[0m
+[0;32mI (121558) TEMP: Raw: 198 | 306 mV | 85.73 °C[0m
+[0;32mI (121558) MQTT: Mensagem enviada: {"temperatura": 85.73, "status": "ok"}[0m
+[0;32mI (122658) TEMP: Raw: 202 | 309 mV | 85.60 °C[0m
+[0;32mI (122658) MQTT: Mensagem enviada: {"temperatura": 85.60, "status": "ok"}[0m
+[0;32mI (123758) TEMP: Raw: 190 | 299 mV | 86.01 °C[0m
+[0;32mI (123758) MQTT: Mensagem enviada: {"temperatura": 86.01, "status": "ok"}[0m
+[0;32mI (124858) TEMP: Raw: 282 | 375 mV | 82.94 °C[0m
+[0;32mI (124858) MQTT: Mensagem enviada: {"temperatura": 82.94, "status": "ok"}[0m
+[0;32mI (125958) TEMP: Raw: 244 | 344 mV | 84.19 °C[0m
+[0;32mI (125958) MQTT: Mensagem enviada: {"temperatura": 84.19, "status": "ok"}[0m
+[0;32mI (127058) TEMP: Raw: 221 | 325 mV | 84.96 °C[0m
+[0;32mI (127058) MQTT: Mensagem enviada: {"temperatura": 84.96, "status": "ok"}[0m
+[0;32mI (128158) TEMP: Raw: 188 | 297 mV | 86.09 °C[0m
+[0;32mI (128158) MQTT: Mensagem enviada: {"temperatura": 86.09, "status": "ok"}[0m
+[0;32mI (129258) TEMP: Raw: 170 | 282 mV | 86.69 °C[0m
+[0;32mI (129258) MQTT: Mensagem enviada: {"temperatura": 86.69, "status": "ok"}[0m
+[0;32mI (130358) TEMP: Raw: 169 | 282 mV | 86.69 °C[0m
+[0;32mI (130358) MQTT: Mensagem enviada: {"temperatura": 86.69, "status": "ok"}[0m
+[0;32mI (131458) TEMP: Raw: 241 | 341 mV | 84.31 °C[0m
+[0;32mI (131458) MQTT: Mensagem enviada: {"temperatura": 84.31, "status": "ok"}[0m
+[0;32mI (132558) TEMP: Raw: 237 | 338 mV | 84.44 °C[0m
+[0;32mI (132558) MQTT: Mensagem enviada: {"temperatura": 84.44, "status": "ok"}[0m
+[0;32mI (133658) TEMP: Raw: 201 | 308 mV | 85.65 °C[0m
+[0;32mI (133658) MQTT: Mensagem enviada: {"temperatura": 85.65, "status": "ok"}[0m
+[0;32mI (134758) TEMP: Raw: 176 | 287 mV | 86.49 °C[0m
+[0;32mI (134758) MQTT: Mensagem enviada: {"temperatura": 86.49, "status": "ok"}[0m
+[0;32mI (135858) TEMP: Raw: 166 | 279 mV | 86.81 °C[0m
+[0;32mI (135858) MQTT: Mensagem enviada: {"temperatura": 86.81, "status": "ok"}[0m
+[0;32mI (136958) TEMP: Raw: 158 | 273 mV | 87.06 °C[0m
+[0;32mI (136958) MQTT: Mensagem enviada: {"temperatura": 87.06, "status": "ok"}[0m
+[0;32mI (138058) TEMP: Raw: 163 | 277 mV | 86.90 °C[0m
+[0;32mI (138058) MQTT: Mensagem enviada: {"temperatura": 86.90, "status": "ok"}[0m
+[0;32mI (139158) TEMP: Raw: 167 | 280 mV | 86.77 °C[0m
+[0;32mI (139158) MQTT: Mensagem enviada: {"temperatura": 86.77, "status": "ok"}[0m
+[0;32mI (140258) TEMP: Raw: 164 | 277 mV | 86.90 °C[0m
+[0;32mI (140258) MQTT: Mensagem enviada: {"temperatura": 86.90, "status": "ok"}[0m
+[0;32mI (141358) TEMP: Raw: 157 | 272 mV | 87.10 °C[0m
+[0;32mI (141358) MQTT: Mensagem enviada: {"temperatura": 87.10, "status": "ok"}[0m
+[0;32mI (142458) TEMP: Raw: 153 | 268 mV | 87.26 °C[0m
+[0;32mI (142458) MQTT: Mensagem enviada: {"temperatura": 87.26, "status": "ok"}[0m
+[0;32mI (143558) TEMP: Raw: 162 | 276 mV | 86.94 °C[0m
+[0;32mI (143558) MQTT: Mensagem enviada: {"temperatura": 86.94, "status": "ok"}[0m
+[0;32mI (144658) TEMP: Raw: 161 | 275 mV | 86.98 °C[0m
+[0;32mI (144658) MQTT: Mensagem enviada: {"temperatura": 86.98, "status": "ok"}[0m
+[0;32mI (145758) TEMP: Raw: 159 | 273 mV | 87.06 °C[0m
+[0;32mI (145758) MQTT: Mensagem enviada: {"temperatura": 87.06, "status": "ok"}[0m
+[0;32mI (146858) TEMP: Raw: 185 | 295 mV | 86.17 °C[0m
+[0;32mI (146858) MQTT: Mensagem enviada: {"temperatura": 86.17, "status": "ok"}[0m
+[0;32mI (147958) TEMP: Raw: 206 | 312 mV | 85.48 °C[0m
+[0;32mI (147958) MQTT: Mensagem enviada: {"temperatura": 85.48, "status": "ok"}[0m
+[0;32mI (149058) TEMP: Raw: 198 | 306 mV | 85.73 °C[0m
+[0;32mI (149058) MQTT: Mensagem enviada: {"temperatura": 85.73, "status": "ok"}[0m
+[0;32mI (150158) TEMP: Raw: 195 | 303 mV | 85.85 °C[0m
+[0;32mI (150158) MQTT: Mensagem enviada: {"temperatura": 85.85, "status": "ok"}[0m
+[0;32mI (151258) TEMP: Raw: 187 | 296 mV | 86.13 °C[0m
+[0;32mI (151258) MQTT: Mensagem enviada: {"temperatura": 86.13, "status": "ok"}[0m
+[0;32mI (152358) TEMP: Raw: 179 | 290 mV | 86.37 °C[0m
+[0;32mI (152358) MQTT: Mensagem enviada: {"temperatura": 86.37, "status": "ok"}[0m
+[0;32mI (153458) TEMP: Raw: 176 | 287 mV | 86.49 °C[0m
+[0;32mI (153458) MQTT: Mensagem enviada: {"temperatura": 86.49, "status": "ok"}[0m
+[0;32mI (154558) TEMP: Raw: 171 | 283 mV | 86.65 °C[0m
+[0;32mI (154558) MQTT: Mensagem enviada: {"temperatura": 86.65, "status": "ok"}[0m
+[0;32mI (155658) TEMP: Raw: 178 | 289 mV | 86.41 °C[0m
+[0;32mI (155658) MQTT: Mensagem enviada: {"temperatura": 86.41, "status": "ok"}[0m
+[0;32mI (156758) TEMP: Raw: 178 | 289 mV | 86.41 °C[0m
+[0;32mI (156758) MQTT: Mensagem enviada: {"temperatura": 86.41, "status": "ok"}[0m
+[0;32mI (157858) TEMP: Raw: 186 | 296 mV | 86.13 °C[0m
+[0;32mI (157858) MQTT: Mensagem enviada: {"temperatura": 86.13, "status": "ok"}[0m
+[0;32mI (158958) TEMP: Raw: 205 | 311 mV | 85.52 °C[0m
+[0;32mI (158958) MQTT: Mensagem enviada: {"temperatura": 85.52, "status": "ok"}[0m
+[0;32mI (160058) TEMP: Raw: 277 | 371 mV | 83.10 °C[0m
+[0;32mI (160058) MQTT: Mensagem enviada: {"temperatura": 83.10, "status": "ok"}[0m

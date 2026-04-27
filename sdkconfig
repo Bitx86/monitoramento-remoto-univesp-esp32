@@ -705,6 +705,15 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# Configuração Wi-Fi
+#
+CONFIG_WIFI_SSID="Bebel"
+CONFIG_WIFI_PASSWORD="Jhonny2026"
+# default:
+CONFIG_MAXIMUM_RETRY=5
+# end of Configuração Wi-Fi
+
+#
 # Compiler options
 #
 # default:

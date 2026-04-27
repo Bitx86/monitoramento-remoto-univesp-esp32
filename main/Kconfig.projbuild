@@ -1,0 +1,21 @@
+menu "Configuração Wi-Fi"
+
+    config WIFI_SSID
+        string "SSID da rede Wi-Fi"
+        default "minha_rede"
+        help
+            Nome da rede Wi-Fi (SSID) à qual o ESP32 irá se conectar.
+
+    config WIFI_PASSWORD
+        string "Senha da rede Wi-Fi"
+        default "minha_senha"
+        help
+            Senha da rede Wi-Fi.
+
+    config MAXIMUM_RETRY
+        int "Número máximo de tentativas de reconexão"
+        default 5
+        help
+            Quantas vezes o ESP32 tentará se reconectar antes de desistir.
+
+endmenu
