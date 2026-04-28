@@ -4,8 +4,6 @@
 #include "esp_err.h"
 
 void mqtt_app_start(void);
+esp_err_t mqtt_send_temperature(float temperatura);
 
-esp_err_t mqtt_send_temperature(
-    float temperatura);
-
-#endif
+#endif // MQTT_H

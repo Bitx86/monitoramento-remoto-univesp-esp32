@@ -19,3 +19,37 @@ menu "Configuração Wi-Fi"
             Quantas vezes o ESP32 tentará se reconectar antes de desistir.
 
 endmenu
+
+menu "Configuração MQTT"
+
+    config MQTT_BROKER_URI
+        string "URI do broker MQTT"
+        default "mqtts://broker.exemplo.com:8883"
+        help
+            Endereço completo do broker MQTT, incluindo esquema e porta.
+
+    config MQTT_USERNAME
+        string "Usuário MQTT"
+        default ""
+        help
+            Nome de usuário para autenticação no broker MQTT.
+
+    config MQTT_PASSWORD
+        string "Senha MQTT"
+        default ""
+        help
+            Senha para autenticação no broker MQTT.
+
+    config MQTT_CLIENT_ID
+        string "Client ID MQTT"
+        default ""
+        help
+            Identificador único do cliente MQTT.
+
+    config MQTT_TOPIC
+        string "Tópico MQTT para publicação"
+        default "devices/default/data"
+        help
+            Tópico no qual os dados de temperatura serão publicados.
+
+endmenu

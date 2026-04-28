@@ -3,12 +3,11 @@
 #include "mqtt_client.h"
 #include "driver/gpio.h"
 
-#define BROKER_URI     "mqtts://35.209.244.156:8883"
-#define MQTT_USERNAME  "dkey-3afdb946"
-#define MQTT_PASSWORD  "rPTYaZ1DfydTEJLrerRVGObBkKUBYHDo"
-#define MQTT_CLIENT_ID "dkey-3afdb946"
-
-#define TOPIC "users/f91977b9-0715-4194-9893-59d28ee7382f/devices/dkey-3afdb946/data"
+#define BROKER_URI     CONFIG_MQTT_BROKER_URI
+#define MQTT_USERNAME  CONFIG_MQTT_USERNAME
+#define MQTT_PASSWORD  CONFIG_MQTT_PASSWORD
+#define MQTT_CLIENT_ID CONFIG_MQTT_CLIENT_ID
+#define TOPIC          CONFIG_MQTT_TOPIC
 
 #define LED_PIN GPIO_NUM_23
 
@@ -56,18 +55,12 @@ void mqtt_app_start(void)
         .broker.verification.certificate =
             (const char *)cert_pem_start,
 
-        .credentials.username =
-            MQTT_USERNAME,
-
-        .credentials.authentication.password =
-            MQTT_PASSWORD,
-
-        .credentials.client_id =
-            MQTT_CLIENT_ID,
+        .credentials.username       = MQTT_USERNAME,
+        .credentials.authentication.password = MQTT_PASSWORD,
+        .credentials.client_id      = MQTT_CLIENT_ID,
     };
 
-    mqtt_client =
-        esp_mqtt_client_init(&mqtt_cfg);
+    mqtt_client = esp_mqtt_client_init(&mqtt_cfg);
 
     esp_mqtt_client_register_event(
         mqtt_client,
@@ -93,14 +86,13 @@ esp_err_t mqtt_send_temperature(float temperatura)
 
     gpio_set_level(LED_PIN, 1);
 
-    int msg_id =
-        esp_mqtt_client_publish(
-            mqtt_client,
-            TOPIC,
-            payload,
-            0,
-            1,
-            0);
+    int msg_id = esp_mqtt_client_publish(
+        mqtt_client,
+        TOPIC,
+        payload,
+        0,
+        1,
+        0);
 
     gpio_set_level(LED_PIN, 0);
 

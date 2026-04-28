@@ -707,13 +707,26 @@ CONFIG_PARTITION_TABLE_MD5=y
 #
 # Configuração Wi-Fi
 #
-# default:
-CONFIG_WIFI_SSID="minha_rede"
-# default:
-CONFIG_WIFI_PASSWORD="minha_senha"
+CONFIG_WIFI_SSID="Bebel"
+CONFIG_WIFI_PASSWORD="Jhonny2026"
 # default:
 CONFIG_MAXIMUM_RETRY=5
 # end of Configuração Wi-Fi
+
+#
+# Configuração MQTT
+#
+# default:
+CONFIG_MQTT_BROKER_URI="mqtts://broker.exemplo.com:8883"
+# default:
+CONFIG_MQTT_USERNAME=""
+# default:
+CONFIG_MQTT_PASSWORD=""
+# default:
+CONFIG_MQTT_CLIENT_ID=""
+# default:
+CONFIG_MQTT_TOPIC="devices/default/data"
+# end of Configuração MQTT
 
 #
 # Compiler options

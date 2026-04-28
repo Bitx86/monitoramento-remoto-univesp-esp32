@@ -714,6 +714,16 @@ CONFIG_MAXIMUM_RETRY=5
 # end of Configuração Wi-Fi
 
 #
+# Configuração MQTT
+#
+CONFIG_MQTT_BROKER_URI="mqtts://35.209.244.156:8883"
+CONFIG_MQTT_USERNAME="dkey-3afdb946"
+CONFIG_MQTT_PASSWORD="rPTYaZ1DfydTEJLrerRVGObBkKUBYHDo"
+CONFIG_MQTT_CLIENT_ID="dkey-3afdb946"
+CONFIG_MQTT_TOPIC="users/f91977b9-0715-4194-9893-59d28ee7382f/devices/dkey-3afdb946/data"
+# end of Configuração MQTT
+
+#
 # Compiler options
 #
 # default:
