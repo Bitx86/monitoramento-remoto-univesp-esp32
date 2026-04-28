@@ -709,6 +709,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/esp-idf-lib__esp_idf_lib_helpers/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/esp-idf-lib__dht/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/espressif__mqtt/cmake_install.cmake")
 endif()
 

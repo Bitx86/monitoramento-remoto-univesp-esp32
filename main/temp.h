@@ -1,13 +1,13 @@
 #ifndef TEMP_H
 #define TEMP_H
 
-#include "freertos/FreeRTOS.h"
-#include "freertos/queue.h"
+#include "esp_err.h"
 
-// Fila acessível por mqtt.c
-extern QueueHandle_t fila_temperatura;
+esp_err_t temp_init(int gpio);
 
-void temp_init(void);
+esp_err_t temp_read(float *temperature,
+                    float *humidity);
+
 void temp_task(void *pvParameters);
 
 #endif

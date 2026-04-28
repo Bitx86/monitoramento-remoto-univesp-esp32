@@ -1,0 +1,9 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Component directory /opt/esp-idf/components/mqtt does not contain a CMakeLists.txt file. No component will be added
+-- git rev-parse returned 'fatal: detected dubious ownership in repository at '/opt/esp-idf'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /opt/esp-idf'
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32

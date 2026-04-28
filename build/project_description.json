@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       "sistema-vacinas-esp32",
-    "project_version":    "e3446dd-dirty",
+    "project_version":    "9edc981-dirty",
     "project_path":       "/home/vinicius/Projetos/sistema-vacinas-esp32",
     "idf_path":           "/opt/esp-idf",
     "build_dir":          "/home/vinicius/Projetos/sistema-vacinas-esp32/build",
@@ -25,8 +25,8 @@
         "COMPONENT_KCONFIGS_PROJBUILD" : "/opt/esp-idf/components/bootloader/Kconfig.projbuild;/opt/esp-idf/components/esp_app_format/Kconfig.projbuild;/opt/esp-idf/components/esp_rom/Kconfig.projbuild;/opt/esp-idf/components/esptool_py/Kconfig.projbuild;/opt/esp-idf/components/partition_table/Kconfig.projbuild;/home/vinicius/Projetos/sistema-vacinas-esp32/main/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "esp_libc", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "esp_stdio", "xtensa" ],
-    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_blockdev", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_cam", "esp_driver_dac", "esp_driver_dma", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_i3c", "esp_driver_isp", "esp_driver_jpeg", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_ppa", "esp_driver_rmt", "esp_driver_sd_intf", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_touch_sens", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_eth", "esp_event", "esp_gdbstub", "esp_hal_ana_cmpr", "esp_hal_ana_conv", "esp_hal_cam", "esp_hal_clock", "esp_hal_dma", "esp_hal_gpio", "esp_hal_gpspi", "esp_hal_i2c", "esp_hal_i2s", "esp_hal_ieee802154", "esp_hal_jpeg", "esp_hal_lcd", "esp_hal_ledc", "esp_hal_mcpwm", "esp_hal_mspi", "esp_hal_parlio", "esp_hal_pcnt", "esp_hal_pmu", "esp_hal_ppa", "esp_hal_rmt", "esp_hal_rtc_timer", "esp_hal_security", "esp_hal_timg", "esp_hal_touch_sens", "esp_hal_twai", "esp_hal_uart", "esp_hal_usb", "esp_hal_wdt", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_libc", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_stdio", "esp_system", "esp_timer", "esp_trace", "esp_usb_cdc_rom_console", "esp_wifi", "espcoredump", "espressif__mqtt", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "log", "lwip", "main", "mbedtls", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "perfmon", "protobuf-c", "protocomm", "pthread", "rt", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "vfs", "wear_levelling", "wpa_supplicant", "xtensa", "" ],
-    "build_component_paths" : [ "/opt/esp-idf/components/app_trace", "/opt/esp-idf/components/app_update", "/opt/esp-idf/components/bootloader", "/opt/esp-idf/components/bootloader_support", "/opt/esp-idf/components/bt", "/opt/esp-idf/components/cmock", "/opt/esp-idf/components/console", "/opt/esp-idf/components/cxx", "/opt/esp-idf/components/driver", "/opt/esp-idf/components/efuse", "/opt/esp-idf/components/esp-tls", "/opt/esp-idf/components/esp_adc", "/opt/esp-idf/components/esp_app_format", "/opt/esp-idf/components/esp_blockdev", "/opt/esp-idf/components/esp_bootloader_format", "/opt/esp-idf/components/esp_coex", "/opt/esp-idf/components/esp_common", "/opt/esp-idf/components/esp_driver_ana_cmpr", "/opt/esp-idf/components/esp_driver_bitscrambler", "/opt/esp-idf/components/esp_driver_cam", "/opt/esp-idf/components/esp_driver_dac", "/opt/esp-idf/components/esp_driver_dma", "/opt/esp-idf/components/esp_driver_gpio", "/opt/esp-idf/components/esp_driver_gptimer", "/opt/esp-idf/components/esp_driver_i2c", "/opt/esp-idf/components/esp_driver_i2s", "/opt/esp-idf/components/esp_driver_i3c", "/opt/esp-idf/components/esp_driver_isp", "/opt/esp-idf/components/esp_driver_jpeg", "/opt/esp-idf/components/esp_driver_ledc", "/opt/esp-idf/components/esp_driver_mcpwm", "/opt/esp-idf/components/esp_driver_parlio", "/opt/esp-idf/components/esp_driver_pcnt", "/opt/esp-idf/components/esp_driver_ppa", "/opt/esp-idf/components/esp_driver_rmt", "/opt/esp-idf/components/esp_driver_sd_intf", "/opt/esp-idf/components/esp_driver_sdio", "/opt/esp-idf/components/esp_driver_sdm", "/opt/esp-idf/components/esp_driver_sdmmc", "/opt/esp-idf/components/esp_driver_sdspi", "/opt/esp-idf/components/esp_driver_spi", "/opt/esp-idf/components/esp_driver_touch_sens", "/opt/esp-idf/components/esp_driver_tsens", "/opt/esp-idf/components/esp_driver_twai", "/opt/esp-idf/components/esp_driver_uart", "/opt/esp-idf/components/esp_driver_usb_serial_jtag", "/opt/esp-idf/components/esp_eth", "/opt/esp-idf/components/esp_event", "/opt/esp-idf/components/esp_gdbstub", "/opt/esp-idf/components/esp_hal_ana_cmpr", "/opt/esp-idf/components/esp_hal_ana_conv", "/opt/esp-idf/components/esp_hal_cam", "/opt/esp-idf/components/esp_hal_clock", "/opt/esp-idf/components/esp_hal_dma", "/opt/esp-idf/components/esp_hal_gpio", "/opt/esp-idf/components/esp_hal_gpspi", "/opt/esp-idf/components/esp_hal_i2c", "/opt/esp-idf/components/esp_hal_i2s", "/opt/esp-idf/components/esp_hal_ieee802154", "/opt/esp-idf/components/esp_hal_jpeg", "/opt/esp-idf/components/esp_hal_lcd", "/opt/esp-idf/components/esp_hal_ledc", "/opt/esp-idf/components/esp_hal_mcpwm", "/opt/esp-idf/components/esp_hal_mspi", "/opt/esp-idf/components/esp_hal_parlio", "/opt/esp-idf/components/esp_hal_pcnt", "/opt/esp-idf/components/esp_hal_pmu", "/opt/esp-idf/components/esp_hal_ppa", "/opt/esp-idf/components/esp_hal_rmt", "/opt/esp-idf/components/esp_hal_rtc_timer", "/opt/esp-idf/components/esp_hal_security", "/opt/esp-idf/components/esp_hal_timg", "/opt/esp-idf/components/esp_hal_touch_sens", "/opt/esp-idf/components/esp_hal_twai", "/opt/esp-idf/components/esp_hal_uart", "/opt/esp-idf/components/esp_hal_usb", "/opt/esp-idf/components/esp_hal_wdt", "/opt/esp-idf/components/esp_hid", "/opt/esp-idf/components/esp_http_client", "/opt/esp-idf/components/esp_http_server", "/opt/esp-idf/components/esp_https_ota", "/opt/esp-idf/components/esp_https_server", "/opt/esp-idf/components/esp_hw_support", "/opt/esp-idf/components/esp_lcd", "/opt/esp-idf/components/esp_libc", "/opt/esp-idf/components/esp_local_ctrl", "/opt/esp-idf/components/esp_mm", "/opt/esp-idf/components/esp_netif", "/opt/esp-idf/components/esp_netif_stack", "/opt/esp-idf/components/esp_partition", "/opt/esp-idf/components/esp_phy", "/opt/esp-idf/components/esp_pm", "/opt/esp-idf/components/esp_psram", "/opt/esp-idf/components/esp_ringbuf", "/opt/esp-idf/components/esp_rom", "/opt/esp-idf/components/esp_security", "/opt/esp-idf/components/esp_stdio", "/opt/esp-idf/components/esp_system", "/opt/esp-idf/components/esp_timer", "/opt/esp-idf/components/esp_trace", "/opt/esp-idf/components/esp_usb_cdc_rom_console", "/opt/esp-idf/components/esp_wifi", "/opt/esp-idf/components/espcoredump", "/home/vinicius/Projetos/sistema-vacinas-esp32/managed_components/espressif__mqtt", "/opt/esp-idf/components/esptool_py", "/opt/esp-idf/components/fatfs", "/opt/esp-idf/components/freertos", "/opt/esp-idf/components/hal", "/opt/esp-idf/components/heap", "/opt/esp-idf/components/http_parser", "/opt/esp-idf/components/idf_test", "/opt/esp-idf/components/ieee802154", "/opt/esp-idf/components/log", "/opt/esp-idf/components/lwip", "/home/vinicius/Projetos/sistema-vacinas-esp32/main", "/opt/esp-idf/components/mbedtls", "/opt/esp-idf/components/nvs_flash", "/opt/esp-idf/components/nvs_sec_provider", "/opt/esp-idf/components/openthread", "/opt/esp-idf/components/partition_table", "/opt/esp-idf/components/perfmon", "/opt/esp-idf/components/protobuf-c", "/opt/esp-idf/components/protocomm", "/opt/esp-idf/components/pthread", "/opt/esp-idf/components/rt", "/opt/esp-idf/components/sdmmc", "/opt/esp-idf/components/soc", "/opt/esp-idf/components/spi_flash", "/opt/esp-idf/components/spiffs", "/opt/esp-idf/components/tcp_transport", "/opt/esp-idf/components/ulp", "/opt/esp-idf/components/unity", "/opt/esp-idf/components/vfs", "/opt/esp-idf/components/wear_levelling", "/opt/esp-idf/components/wpa_supplicant", "/opt/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "console", "cxx", "driver", "efuse", "esp-idf-lib__dht", "esp-idf-lib__esp_idf_lib_helpers", "esp-tls", "esp_adc", "esp_app_format", "esp_blockdev", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_cam", "esp_driver_dac", "esp_driver_dma", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_i3c", "esp_driver_isp", "esp_driver_jpeg", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_ppa", "esp_driver_rmt", "esp_driver_sd_intf", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_touch_sens", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_eth", "esp_event", "esp_gdbstub", "esp_hal_ana_cmpr", "esp_hal_ana_conv", "esp_hal_cam", "esp_hal_clock", "esp_hal_dma", "esp_hal_gpio", "esp_hal_gpspi", "esp_hal_i2c", "esp_hal_i2s", "esp_hal_ieee802154", "esp_hal_jpeg", "esp_hal_lcd", "esp_hal_ledc", "esp_hal_mcpwm", "esp_hal_mspi", "esp_hal_parlio", "esp_hal_pcnt", "esp_hal_pmu", "esp_hal_ppa", "esp_hal_rmt", "esp_hal_rtc_timer", "esp_hal_security", "esp_hal_timg", "esp_hal_touch_sens", "esp_hal_twai", "esp_hal_uart", "esp_hal_usb", "esp_hal_wdt", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_libc", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_stdio", "esp_system", "esp_timer", "esp_trace", "esp_usb_cdc_rom_console", "esp_wifi", "espcoredump", "espressif__mqtt", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "log", "lwip", "main", "mbedtls", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "perfmon", "protobuf-c", "protocomm", "pthread", "rt", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "vfs", "wear_levelling", "wpa_supplicant", "xtensa", "" ],
+    "build_component_paths" : [ "/opt/esp-idf/components/app_trace", "/opt/esp-idf/components/app_update", "/opt/esp-idf/components/bootloader", "/opt/esp-idf/components/bootloader_support", "/opt/esp-idf/components/bt", "/opt/esp-idf/components/cmock", "/opt/esp-idf/components/console", "/opt/esp-idf/components/cxx", "/opt/esp-idf/components/driver", "/opt/esp-idf/components/efuse", "/home/vinicius/Projetos/sistema-vacinas-esp32/managed_components/esp-idf-lib__dht", "/home/vinicius/Projetos/sistema-vacinas-esp32/managed_components/esp-idf-lib__esp_idf_lib_helpers", "/opt/esp-idf/components/esp-tls", "/opt/esp-idf/components/esp_adc", "/opt/esp-idf/components/esp_app_format", "/opt/esp-idf/components/esp_blockdev", "/opt/esp-idf/components/esp_bootloader_format", "/opt/esp-idf/components/esp_coex", "/opt/esp-idf/components/esp_common", "/opt/esp-idf/components/esp_driver_ana_cmpr", "/opt/esp-idf/components/esp_driver_bitscrambler", "/opt/esp-idf/components/esp_driver_cam", "/opt/esp-idf/components/esp_driver_dac", "/opt/esp-idf/components/esp_driver_dma", "/opt/esp-idf/components/esp_driver_gpio", "/opt/esp-idf/components/esp_driver_gptimer", "/opt/esp-idf/components/esp_driver_i2c", "/opt/esp-idf/components/esp_driver_i2s", "/opt/esp-idf/components/esp_driver_i3c", "/opt/esp-idf/components/esp_driver_isp", "/opt/esp-idf/components/esp_driver_jpeg", "/opt/esp-idf/components/esp_driver_ledc", "/opt/esp-idf/components/esp_driver_mcpwm", "/opt/esp-idf/components/esp_driver_parlio", "/opt/esp-idf/components/esp_driver_pcnt", "/opt/esp-idf/components/esp_driver_ppa", "/opt/esp-idf/components/esp_driver_rmt", "/opt/esp-idf/components/esp_driver_sd_intf", "/opt/esp-idf/components/esp_driver_sdio", "/opt/esp-idf/components/esp_driver_sdm", "/opt/esp-idf/components/esp_driver_sdmmc", "/opt/esp-idf/components/esp_driver_sdspi", "/opt/esp-idf/components/esp_driver_spi", "/opt/esp-idf/components/esp_driver_touch_sens", "/opt/esp-idf/components/esp_driver_tsens", "/opt/esp-idf/components/esp_driver_twai", "/opt/esp-idf/components/esp_driver_uart", "/opt/esp-idf/components/esp_driver_usb_serial_jtag", "/opt/esp-idf/components/esp_eth", "/opt/esp-idf/components/esp_event", "/opt/esp-idf/components/esp_gdbstub", "/opt/esp-idf/components/esp_hal_ana_cmpr", "/opt/esp-idf/components/esp_hal_ana_conv", "/opt/esp-idf/components/esp_hal_cam", "/opt/esp-idf/components/esp_hal_clock", "/opt/esp-idf/components/esp_hal_dma", "/opt/esp-idf/components/esp_hal_gpio", "/opt/esp-idf/components/esp_hal_gpspi", "/opt/esp-idf/components/esp_hal_i2c", "/opt/esp-idf/components/esp_hal_i2s", "/opt/esp-idf/components/esp_hal_ieee802154", "/opt/esp-idf/components/esp_hal_jpeg", "/opt/esp-idf/components/esp_hal_lcd", "/opt/esp-idf/components/esp_hal_ledc", "/opt/esp-idf/components/esp_hal_mcpwm", "/opt/esp-idf/components/esp_hal_mspi", "/opt/esp-idf/components/esp_hal_parlio", "/opt/esp-idf/components/esp_hal_pcnt", "/opt/esp-idf/components/esp_hal_pmu", "/opt/esp-idf/components/esp_hal_ppa", "/opt/esp-idf/components/esp_hal_rmt", "/opt/esp-idf/components/esp_hal_rtc_timer", "/opt/esp-idf/components/esp_hal_security", "/opt/esp-idf/components/esp_hal_timg", "/opt/esp-idf/components/esp_hal_touch_sens", "/opt/esp-idf/components/esp_hal_twai", "/opt/esp-idf/components/esp_hal_uart", "/opt/esp-idf/components/esp_hal_usb", "/opt/esp-idf/components/esp_hal_wdt", "/opt/esp-idf/components/esp_hid", "/opt/esp-idf/components/esp_http_client", "/opt/esp-idf/components/esp_http_server", "/opt/esp-idf/components/esp_https_ota", "/opt/esp-idf/components/esp_https_server", "/opt/esp-idf/components/esp_hw_support", "/opt/esp-idf/components/esp_lcd", "/opt/esp-idf/components/esp_libc", "/opt/esp-idf/components/esp_local_ctrl", "/opt/esp-idf/components/esp_mm", "/opt/esp-idf/components/esp_netif", "/opt/esp-idf/components/esp_netif_stack", "/opt/esp-idf/components/esp_partition", "/opt/esp-idf/components/esp_phy", "/opt/esp-idf/components/esp_pm", "/opt/esp-idf/components/esp_psram", "/opt/esp-idf/components/esp_ringbuf", "/opt/esp-idf/components/esp_rom", "/opt/esp-idf/components/esp_security", "/opt/esp-idf/components/esp_stdio", "/opt/esp-idf/components/esp_system", "/opt/esp-idf/components/esp_timer", "/opt/esp-idf/components/esp_trace", "/opt/esp-idf/components/esp_usb_cdc_rom_console", "/opt/esp-idf/components/esp_wifi", "/opt/esp-idf/components/espcoredump", "/home/vinicius/Projetos/sistema-vacinas-esp32/managed_components/espressif__mqtt", "/opt/esp-idf/components/esptool_py", "/opt/esp-idf/components/fatfs", "/opt/esp-idf/components/freertos", "/opt/esp-idf/components/hal", "/opt/esp-idf/components/heap", "/opt/esp-idf/components/http_parser", "/opt/esp-idf/components/idf_test", "/opt/esp-idf/components/ieee802154", "/opt/esp-idf/components/log", "/opt/esp-idf/components/lwip", "/home/vinicius/Projetos/sistema-vacinas-esp32/main", "/opt/esp-idf/components/mbedtls", "/opt/esp-idf/components/nvs_flash", "/opt/esp-idf/components/nvs_sec_provider", "/opt/esp-idf/components/openthread", "/opt/esp-idf/components/partition_table", "/opt/esp-idf/components/perfmon", "/opt/esp-idf/components/protobuf-c", "/opt/esp-idf/components/protocomm", "/opt/esp-idf/components/pthread", "/opt/esp-idf/components/rt", "/opt/esp-idf/components/sdmmc", "/opt/esp-idf/components/soc", "/opt/esp-idf/components/spi_flash", "/opt/esp-idf/components/spiffs", "/opt/esp-idf/components/tcp_transport", "/opt/esp-idf/components/ulp", "/opt/esp-idf/components/unity", "/opt/esp-idf/components/vfs", "/opt/esp-idf/components/wear_levelling", "/opt/esp-idf/components/wpa_supplicant", "/opt/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_trace": {
             "alias": "idf::app_trace",
@@ -177,6 +177,36 @@
             "file": "/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/efuse/libefuse.a",
             "sources": [ "/opt/esp-idf/components/efuse/esp32/esp_efuse_table.c", "/opt/esp-idf/components/efuse/esp32/esp_efuse_fields.c", "/opt/esp-idf/components/efuse/esp32/esp_efuse_utility.c", "/opt/esp-idf/components/efuse/src/esp_efuse_api.c", "/opt/esp-idf/components/efuse/src/esp_efuse_fields.c", "/opt/esp-idf/components/efuse/src/esp_efuse_utility.c", "/opt/esp-idf/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c", "/opt/esp-idf/components/efuse/src/esp_efuse_startup.c" ],
             "include_dirs": [ "include", "esp32/include" ]
+        },
+        "esp-idf-lib__dht": {
+            "alias": "idf::esp-idf-lib__dht",
+            "target": "___idf_esp-idf-lib__dht",
+            "prefix": "idf",
+            "dir": "/home/vinicius/Projetos/sistema-vacinas-esp32/managed_components/esp-idf-lib__dht",
+            "type": "LIBRARY",
+            "lib": "__idf_esp-idf-lib__dht",
+            "reqs": [ "esp_driver_gpio", "freertos", "log", "esp-idf-lib__esp_idf_lib_helpers" ],
+            "priv_reqs": [ "esp-idf-lib__esp_idf_lib_helpers" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [ "esp-idf-lib__esp_idf_lib_helpers" ],
+            "file": "/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/esp-idf-lib__dht/libesp-idf-lib__dht.a",
+            "sources": [ "/home/vinicius/Projetos/sistema-vacinas-esp32/managed_components/esp-idf-lib__dht/dht.c" ],
+            "include_dirs": [ "." ]
+        },
+        "esp-idf-lib__esp_idf_lib_helpers": {
+            "alias": "idf::esp-idf-lib__esp_idf_lib_helpers",
+            "target": "___idf_esp-idf-lib__esp_idf_lib_helpers",
+            "prefix": "idf",
+            "dir": "/home/vinicius/Projetos/sistema-vacinas-esp32/managed_components/esp-idf-lib__esp_idf_lib_helpers",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_esp-idf-lib__esp_idf_lib_helpers",
+            "reqs": [ "freertos" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": [ "." ]
         },
         "esp-tls": {
             "alias": "idf::esp-tls",
@@ -1746,11 +1776,11 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "espressif__mqtt" ],
+            "priv_reqs": [ "esp-idf-lib__dht", "espressif__mqtt" ],
             "managed_reqs": [],
-            "managed_priv_reqs": [ "espressif__mqtt" ],
+            "managed_priv_reqs": [ "esp-idf-lib__dht", "espressif__mqtt" ],
             "file": "/home/vinicius/Projetos/sistema-vacinas-esp32/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/vinicius/Projetos/sistema-vacinas-esp32/main/sistema-vacinas-esp32.c", "/home/vinicius/Projetos/sistema-vacinas-esp32/build/cert.pem.S" ],
+            "sources": [ "/home/vinicius/Projetos/sistema-vacinas-esp32/main/sistema-vacinas-esp32.c", "/home/vinicius/Projetos/sistema-vacinas-esp32/main/wifi.c", "/home/vinicius/Projetos/sistema-vacinas-esp32/main/mqtt.c", "/home/vinicius/Projetos/sistema-vacinas-esp32/main/temp.c", "/home/vinicius/Projetos/sistema-vacinas-esp32/build/cert.pem.S" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
@@ -3859,9 +3889,35 @@
             "source": "project_components",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "espressif__mqtt" ],
+            "priv_reqs": [ "esp-idf-lib__dht", "espressif__mqtt" ],
             "managed_reqs": [],
-            "managed_priv_reqs": [ "espressif__mqtt" ],
+            "managed_priv_reqs": [ "esp-idf-lib__dht", "espressif__mqtt" ],
+            "include_dirs": [ "." ]
+        },
+        "esp-idf-lib__dht": {
+            "alias": "idf::esp-idf-lib__dht",
+            "target": "___idf_esp-idf-lib__dht",
+            "prefix": "idf",
+            "dir": "/home/vinicius/Projetos/sistema-vacinas-esp32/managed_components/esp-idf-lib__dht",
+            "source": "project_managed_components",
+            "lib": "__idf_esp-idf-lib__dht",
+            "reqs": [ "esp_driver_gpio", "freertos", "log", "esp-idf-lib__esp_idf_lib_helpers" ],
+            "priv_reqs": [ "esp-idf-lib__esp_idf_lib_helpers" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [ "esp-idf-lib__esp_idf_lib_helpers" ],
+            "include_dirs": [ "." ]
+        },
+        "esp-idf-lib__esp_idf_lib_helpers": {
+            "alias": "idf::esp-idf-lib__esp_idf_lib_helpers",
+            "target": "___idf_esp-idf-lib__esp_idf_lib_helpers",
+            "prefix": "idf",
+            "dir": "/home/vinicius/Projetos/sistema-vacinas-esp32/managed_components/esp-idf-lib__esp_idf_lib_helpers",
+            "source": "project_managed_components",
+            "lib": "__idf_esp-idf-lib__esp_idf_lib_helpers",
+            "reqs": [ "freertos" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
             "include_dirs": [ "." ]
         },
         "espressif__mqtt": {
